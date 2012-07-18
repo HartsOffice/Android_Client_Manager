@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:scrollbars="vertical" 
+     android:layout_height="fill_parent" 
+     android:layout_width="fill_parent">
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:isScrollContainer="true">
+	<TableRow>
+	<!-- Top Label CONTAINER -->
+		<TextView
+			android:id="@+id/theTitle" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/titleTicketEdit" />
+			
+			
+			
+		<TextView android:id="@+id/contact" 
+			android:layout_toRightOf="@+id/theTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="20sp"
+			android:textSize="18sp"
+			android:textColor="@color/hiBack"
+			android:layout_weight="1"/>
+		</TableRow>
+	<!-- END Top Label CONTAINER -->	
+		
+	<!-- STATUS CONTAINER  -->
+	<TableRow>
+		<TextView android:id="@+id/statusTitle" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:paddingRight="10sp"
+			android:textSize="14sp"
+			android:text="@string/statusTitle"
+			android:layout_weight="1"/>
+		<Spinner android:id="@+id/ticketStateSpinner" 
+			android:layout_width="100dip"
+			android:layout_height="35dip" 
+			android:paddingLeft="10sp"
+			android:textSize="10sp"
+        	android:layout_weight="1"/>
+<!-- 		<EditText android:id="@+id/ticketState" 
+			android:layout_width="95dip"
+			android:layout_height="35dip" 
+			android:textSize="14sp"
+			android:paddingLeft="10sp"
+			android:layout_weight="1"/>      -->
+	</TableRow>
+	<!-- END STATUS CONTAINER -->
+	
+	<!-- Priority CONTAINER  -->
+	<TableRow>
+		<TextView android:id="@+id/priorityTitle" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:paddingRight="10sp"
+			android:textSize="14sp"
+			android:text="@string/priorityTitle"
+			android:layout_weight="1"/>
+		<Spinner android:id="@+id/ticketPrioritySpinner" 
+			android:layout_width="100dip"
+			android:layout_height="35dip" 
+			android:textSize="10sp"
+			android:layout_weight="1"/>
+<!-- 		android:drawSelectorOnTop="true"  -->
+<!--  		<EditText android:id="@+id/ticketPriority" 
+			android:layout_width="80dip"
+			android:textSize="14sp"
+			android:layout_height="35dip" 
+			android:layout_weight="1"/>    -->
+		</TableRow>
+		<!-- END Priority CONTAINER -->
+		
+		<!-- Service CONTAINER  -->
+		<TableRow>
+		<TextView android:id="@+id/serviceTitle" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textSize="14sp"
+			android:text="@string/serviceTitle"
+			android:layout_weight="1"/>
+		<Spinner android:id="@+id/ticketServiceSpinner" 
+			android:layout_width="100dip"
+			android:layout_height="35dip" 
+			android:textSize="14sp"
+			android:paddingLeft="10sp"
+			android:layout_weight="1"/>
+<!-- 		android:drawSelectorOnTop="true"  -->
+		<!--android:prompt="@string/statusprompt"    -->
+<!-- 		<EditText android:id="@+id/ticketService" 
+			android:layout_width="100dip"
+			android:layout_height="35dip" 
+			android:paddingLeft="10sp"
+			android:textSize="14sp"
+			android:layout_weight="1"/>      -->
+	</TableRow>
+	<!-- END Service CONTAINER  -->
+	
+	<!-- DATE AND TIME CONTAINER  -->
+	<TableRow>
+		<TextView
+			android:id="@+id/dateTitle1" 
+			android:paddingLeft="10sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/date" />
+		<Button android:id="@+id/ticketDate1"
+			android:layout_width="90dip"
+			android:layout_height="35dip" 
+			android:paddingLeft="10sp"
+			android:textSize="14sp" 
+			android:layout_weight="1"/>
+		<TextView
+			android:id="@+id/timeTitle1" 
+			android:paddingLeft="10sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/time" />
+		<Button android:id="@+id/ticketTime1"
+			android:layout_width="100dip"
+			android:layout_height="35dip" 
+			android:textSize="14sp" 
+			android:layout_weight="1"/>	
+		</TableRow>
+		<!-- END DATE AND TIME CONTAINER  -->
+
+<!-- Dollars and Total Time CONTAINER  -->
+	<TableRow>
+		<TextView
+			android:id="@+id/dollarTitle3" 
+			android:paddingLeft="10sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/dollars" />
+		<EditText android:id="@+id/ticketDollar"
+			android:layout_width="90dip"
+			android:layout_height="35dip" 
+			android:paddingLeft="10sp"
+			android:textSize="14sp" 
+			android:layout_weight="1"/>
+		<TextView
+			android:id="@+id/timeTotalTitle1" 
+			android:paddingLeft="10sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/timeTotal" />
+		<EditText android:id="@+id/ticketTime2"
+			android:layout_width="100dip"
+			android:layout_height="35dip" 
+			android:textSize="14sp" 
+			android:layout_weight="1"/>	
+		</TableRow>
+		<!-- END Dollars and Total Time CONTAINER  -->
+		
+		
+		<!-- NOTE CONTAINER  -->
+		<TableRow>		
+		<TextView
+			android:id="@+id/noteTitle" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/note" />
+		<EditText android:id="@+id/note" 
+			android:textSize="14sp"
+			android:layout_height="100dip" 
+			android:layout_weight="1"/>
+	</TableRow>
+	<!-- END NOTE CONTAINER  -->
+	
+	<!-- BUTTON CONTAINER  -->
+	<TableRow>
+		<Button android:id="@+id/confirm" 
+			android:text="@string/confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="36dip" />
+		<Button android:id="@+id/delete" 
+			android:text="@string/delete"
+			android:layout_width="wrap_content"
+			android:layout_height="36dip" />
+
+		</TableRow>
+		<!-- END BUTTON CONTAINER  -->	
+		
+	</TableLayout>
+	</ScrollView>

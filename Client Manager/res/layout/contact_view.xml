@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:scrollbars="vertical" 
+     android:layout_height="fill_parent" 
+     android:layout_width="fill_parent">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	
+
+		<TextView
+			android:id="@+id/theTitle" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/title" />
+		<!-- CONTACT NAME CONTAINER  -->
+		<TableRow>
+		<TextView android:id="@+id/labelname"
+			android:text="@string/ContactT"
+			android:editable="false"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"/>
+		<TextView android:id="@+id/contact" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"/>
+		</TableRow>
+		<!-- END CONTACT NAME CONTAINER  -->
+		<!-- CONTACT CELLPHONE CONTAINER  -->
+		<TableRow>
+		<TextView android:id="@+id/contactCellPhone" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:text="Cell Phone:"/>
+		<Button android:id="@+id/cellphoneNumber" 
+			android:layout_width="wrap_content"
+			android:layout_height="40dip" 
+			android:layout_weight="1"
+			/>
+		</TableRow>
+		<!-- END CONTACT CELLPHONE CONTAINER  -->
+		
+		<!-- CONTACT EMAIL CONTAINER  -->
+		<TableRow>
+		<TextView android:id="@+id/contactEmail" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:text="Email:"/>
+		<Button android:id="@+id/email" 
+			android:layout_width="wrap_content"
+			android:layout_height="40dip" 
+			android:layout_weight="1"/>
+			</TableRow>
+		<!-- END CONTACT EMAIL CONTAINER  -->
+		<!-- CONTACT HOMEPHONE CONTAINER  -->
+		<TableRow>
+		<TextView android:id="@+id/contactHomePhone" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:text="Home Phone:"/>
+		<Button android:id="@+id/homephoneNumber" 
+			android:layout_width="wrap_content"
+			android:layout_height="40dip" 
+			android:layout_weight="1"
+			/>
+		</TableRow>
+		<!-- END CONTACT HOMEPHONE CONTAINER  -->
+				<!-- CONTACT WORKPHONE CONTAINER  -->
+		<TableRow>
+		<TextView android:id="@+id/contactWorkPhone" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:text="Work Phone:"/>
+		<Button android:id="@+id/workphoneNumber" 
+			android:layout_width="wrap_content"
+			android:layout_height="40dip" 
+			android:layout_weight="1"
+			/>
+		</TableRow>
+		<!-- END CONTACT HOMEPHONE CONTAINER  -->
+		<!-- CONTACT URL CONTAINER  -->
+		<TableRow>
+		<TextView android:id="@+id/contactURLttl" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:text="URL:"/>
+		<Button android:id="@+id/URLDomain" 
+			android:layout_width="wrap_content"
+			android:layout_height="40dip" 
+			android:layout_weight="1"/>
+			</TableRow>
+		<!-- END CONTACT URL CONTAINER  -->
+	
+<TableRow>
+	<TextView
+		android:id="@+id/contactTitle" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/note" />
+		</TableRow>
+		<TableRow>
+	<TextView android:id="@+id/note" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14sp" 
+		android:layout_weight="1"
+		android:scrollbars="vertical" />
+		</TableRow>
+	
+	<!-- BOTTOM BUTTONS CONTAINER -->
+	<TableRow>
+	<Button android:id="@+id/edit" 
+	  android:text="@string/edit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<Button android:id="@+id/ticket" 
+	  android:text="@string/tickets"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<Button android:id="@+id/returning" 
+	  android:text="@string/contact_return"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+		</TableRow>
+<!-- END BOTTOM BUTTONS CONTAINER -->
+
+</TableLayout>
+</ScrollView>
